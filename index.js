@@ -5,7 +5,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-    [
+    
         {
           type: "input",
           name: "GitHub",
@@ -18,7 +18,7 @@ const questions = [
         },        
         {
           type: "input",
-          name: "ProjectName",
+          name: "Title",
           message: "What is the project name?"
         },
         {
@@ -52,16 +52,31 @@ const questions = [
           message: "Which License would you like to use?",
           choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
         }
-      ]
+      
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
+  console.log("writeToFile has been called...")
+
+fs.writeFile(fileName, data, err => {
+  if (err) {
+    console.error(err);
+  }
+  console.log(`writeFile should have worked!`)
+});
+
 }
 
 // function to initialize program
 function init() {
-
+    console.log("init has been called...")
+    inquirer.prompt(questions)
+    .then(function(inqData){
+    console.log(inqData);
+    const markDown = generateMarkdown(inqData)
+    writeToFile("testREADME.md", markDown)
+    });
 }
 
 // function call to initialize program
