@@ -8,34 +8,39 @@ ${data.Description}
 
 ## Table of contents
 
-* [Description](#Description})
+* [Description](#description})
 
-* [Installation](#Installation)
+* [Installation](#installation)
 
-* [Usage](#Usage)
+* [Contribution](#contribution)
+
+* [Testing](#testing)
+
+* [Question](#questions)
+
+* [License](#license)
 
 
 ## Installation
 
 ${data.Installation}
 
-## Contribution
-
-${data.Contribution}
-
 ## Usage
 
 ${data.Usage}
+
+## Contribution
+
+${data.Contribution}
 
 ## Testing
 
 ${data.Test}
 
 
-**SCREENSHOT**
+// TODO - Ask about screenshot
 
-   ![Project Screenshot](assets/images/screenshot.png)
-
+// TODO - Badges?  Use the shields site and then use the license name in the url?
 
 ## Questions
 
@@ -47,7 +52,6 @@ You can also see more of my work at ${data.GitHub}
 
 ${data.License}
 
-
 ---
 
 
@@ -56,3 +60,15 @@ ${data.License}
 }
 
 module.exports = generateMarkdown;
+
+
+// function grabLicenseText(License) {
+//   const licenseMap = {MIT:"FREE TO USE AND COMMERCIAL PURPOSES", APACHE:"I'll paste the APOACHE license copy here",GPL:"I'll paste the GPL license copy here",MIT:"I'll paste the MIT license copy here",MIT:"I'll paste the MIT license copy here",MIT:"I'll paste the MIT license copy here",lastName:"Doe", age:50, eyeColor:"blue"};
+
+//   for (const currentObject of licenseMap) {
+//     // if (currentObject === "License")
+//     console.log(currentObject)
+//   }
+  
+//   return licenseText;
+// }

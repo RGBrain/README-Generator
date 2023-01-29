@@ -5,7 +5,11 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-    
+        {
+          type: "input",
+          name: "name",
+          message: "What is your name?"
+        }, 
         {
           type: "input",
           name: "GitHub",
@@ -75,7 +79,7 @@ function init() {
     .then(function(inqData){
     console.log(inqData);
     const markDown = generateMarkdown(inqData)
-    writeToFile("testREADME.md", markDown)
+    writeToFile("v2testREADME.md", markDown)
     });
 }
 
