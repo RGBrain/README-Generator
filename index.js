@@ -1,5 +1,5 @@
 const fs = require("fs");
-const path = require('path');
+// const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -79,7 +79,7 @@ function init() {
     .then(function(inqData){
     console.log(inqData);
     const markDown = generateMarkdown(inqData)
-    writeToFile("testREADME.md", markDown)
+    writeToFile("README.md", markDown)
     });
 }
 
