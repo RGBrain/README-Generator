@@ -2,7 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// Array of questions for user
 const questions = [
         {
           type: "input",
@@ -41,7 +41,7 @@ const questions = [
         },
         {
           type: "input",
-          name: "Contribution",
+          name: "Contributing",
           message: "Contribution Guidelines:"
         },
         {
@@ -60,23 +60,22 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  console.log("writeToFile has been called...")
+  // console.log("writeToFile has been called...")
 
 fs.writeFile(fileName, data, err => {
   if (err) {
     console.error(err);
   }
-  console.log(`writeFile should have worked!`)
+  // console.log(`writeFile should have worked!`)
 });
 
 }
 
 // function to initialize program
 function init() {
-    console.log("init has been called...")
     inquirer.prompt(questions)
     .then(function(inqData){
-    console.log(inqData);
+    console.log("Thank you for using README-Generator - your README file has been created in this directory.");
     const markDown = generateMarkdown(inqData)
     writeToFile("README.md", markDown)
     });
