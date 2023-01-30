@@ -7,7 +7,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
         {
           type: "input",
-          name: "name",
+          name: "Name",
           message: "What is your name?"
         }, 
         {
@@ -79,7 +79,7 @@ function init() {
     .then(function(inqData){
     console.log(inqData);
     const markDown = generateMarkdown(inqData)
-    writeToFile("v2testREADME.md", markDown)
+    writeToFile("testREADME.md", markDown)
     });
 }
 
