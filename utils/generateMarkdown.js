@@ -911,20 +911,16 @@ ${data.Contribution}
 
 ${data.Test}
 
-
-// TODO - Ask about screenshot
-
-// TODO - Badges?  Use the shields site and then use the license name in the url?
-
 ## Questions
 
 If you have any questions, please contact me directly: ${data.Email}
 
-You can also see more of my work at ${data.GitHub}
+You can also see more of my work at [https://github.com/${data.GitHub}](https://github.com/${data.GitHub})
 
 ## License
 
-${data.License}
+[![License: MIT](https://img.shields.io/badge/License-${data.License.split(' ').join('_')}-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ${licenseText}
 
