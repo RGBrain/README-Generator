@@ -27,6 +27,8 @@ You will need to have node.js installed on your machine to use this program.  Th
 
 You will be presented with a series of questions, your answers will populate the README document that will be created.
 
+https://www.dropbox.com/s/32ihyks8d7hmmra/Richard%20Brain%27s%20README-Generator.mov?dl=0
+
 ## Contribution
 
 See license for full details, but this is open source.
