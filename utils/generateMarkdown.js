@@ -8,6 +8,8 @@ function generateMarkdown(data) {
   
   return `# ${data.Title}
 
+  [![License: ${data.License.split(' ').join('_')}](https://img.shields.io/badge/License-${data.License.split(' ').join('_')}-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 ${data.Description}
@@ -51,7 +53,7 @@ You can also see more of my work at [https://github.com/${data.GitHub}](https://
 
 ## License
 
-[![License: ${data.License.split(' ').join('_')}](https://img.shields.io/badge/License-${data.License.split(' ').join('_')}-yellow.svg)](https://opensource.org/licenses/MIT)
+${data.License}
 
 
 ${licenseText}

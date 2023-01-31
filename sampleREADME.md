@@ -4,7 +4,7 @@
 
 ## Description
 
-This application creates a professional README document from command line inputs
+This application creates a professional README file from the command line.
 
 ## Table of contents
 
@@ -14,22 +14,28 @@ This application creates a professional README document from command line inputs
 
 * [Contributing](#contributing)
 
-* [Questions](#questions)
+* [Testing](#testing)
+
+* [Question](#questions)
 
 * [License](#license)
 
 
 ## Installation
 
-You will need to have node.js installed on your machine to use this program.  Then, navigate the the folder that contains this application.  You may need to run the command 'npm i' to install the dependancies ("inquirer": "^6.3.1") and then run the command 'node index.js'.
+You will need to have node.js installed.  Then navigate to the folder which contains the README-Generator and use command 'node index.js'
 
 ## Usage
 
-You will be presented with a series of questions, your answers will populate the README document that will be created.
+Simply answer the questions and the README will be created.
 
 ## Contribution
 
-See license for full details, but this is open source.
+Open source - see license for full details, but this is free beer open source - help yourself!
+
+## Testing
+
+Tested.
 
 ## Questions
 
